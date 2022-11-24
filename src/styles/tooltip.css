@@ -1,0 +1,40 @@
+:root {
+    --background-tippy: #fff;
+    --text-tippy: #26323d;
+    --shadow-tippy: 0 0 20px 4px rgba(154, 161, 177, .15), 0 4px 80px -8px rgba(36, 40, 47, .25), 0 4px 4px -2px rgba(91, 94, 105, .15);
+}
+.dark:root {
+    --background-tippy: #050505;
+    --text-tippy: #d4d4d4;
+    --shadow-tippy: 0 0 20px 4px rgba(5, 5, 5, 0.15), 0 4px 80px -8px rgba(15, 15, 15, 0.25), 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+}
+
+.tippy-box[data-theme~=dbio] {
+    color: var(--text-tippy);
+    box-shadow: var(--shadow-tippy);
+    background-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio][data-placement^=top]>.tippy-arrow:before {
+    border-top-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio][data-placement^=bottom]>.tippy-arrow:before {
+    border-bottom-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio][data-placement^=left]>.tippy-arrow:before {
+    border-left-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio][data-placement^=right]>.tippy-arrow:before {
+    border-right-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio]>.tippy-backdrop {
+    background-color: var(--background-tippy);
+}
+
+.tippy-box[data-theme~=dbio]>.tippy-svg-arrow {
+    fill: var(--background-tippy);
+}
